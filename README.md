@@ -1,4 +1,4 @@
-# Extract-data-from-Netcdf-files-to-shapefile-using-R
+# Extract-data-from-Netcdf-files-using-shapefile-to-CSV-using-R
 This repository contains an R script for extracting precipitation data from NetCDF files using a grid shapefile.  
 It is designed to process **decadal rainfall datasets**, extract values at grid centroids, append temporal (dekad) identifiers, and export the results to CSV for further analysis.
 
