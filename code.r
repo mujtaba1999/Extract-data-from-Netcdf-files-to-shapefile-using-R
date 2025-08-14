@@ -6,8 +6,7 @@ library(dplyr)         # For data manipulation
 library(stringr)       # For string manipulation
 
 # Set the directory containing the NetCDF files
-# Set the directory containing the NetCDF files
-input_dir <- "C:/Users/mujta/Documents/Intrenship/Prec/decadal_rf_cdd/2009"
+input_dir <- "C:/Users/mujta/Documents/Intrenship/Prec/2009"
 #output_csv <- "precipitation_grid_data_with_dekad.csv"
 grid_shapefile <- "C:/Users/mujta/Documents/DATABANK/Kenya/Shp/Busia_fishnet_300m_clip.shp"  # Path to your grid shapefile
 
@@ -71,7 +70,7 @@ for (file in nc_files) {
   # Close the NetCDF file
   nc_close(nc_data)
 }
-output_csv <- "C:/Users/mujta/Documents/Intrenship/Prec/decadal_rf_cdd/2009/cdd_grid_2009.csv"
+output_csv <- "C:/Users/mujta/Documents/Intrenship/Prec/Prec_grid_2009.csv"
 # Write the results to a CSV file
 write.csv(results, output_csv, row.names = FALSE)
 cat("Precipitation data with dekad information saved to", output_csv, "\n")
